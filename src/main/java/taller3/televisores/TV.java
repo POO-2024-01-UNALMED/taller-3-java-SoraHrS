@@ -25,7 +25,9 @@ public class TV {
 	}
 	public void setCanal(int canal) {
 		if (estado == true) {
-		this.canal = canal; 
+			if (canal>=1 && canal<=120) {
+		this.canal = canal;
+			}
 		}
 	}
 	public int getPrecio() {
@@ -39,7 +41,9 @@ public class TV {
 	}
 	public void setVolumen(int volumen) {
 		if (estado == true) {
+			if (volumen>=1 && volumen<=7) {
 		this.volumen = volumen;
+			}
 		}
 	}
 	public Control getCotrol() {
@@ -64,31 +68,15 @@ public class TV {
 		return estado;
 	}
 	public void canalUp() {
-		if (estado == true) {
-			if (canal < 120) {
-			canal += 1;
-			}
-		}
+		this.setCanal(canal + 1);
 	}
 	public void canalDown() {
-		if (estado == true) {
-			if (canal > 1) {
-			canal -= 1;
-			}
-		}
+		this.setCanal(canal - 1);
 	}
 	public void volumenUp() {
-		if (estado == true) {
-			if (volumen < 7) {
-			volumen += 1;
-			}
-		}
+		this.setVolumen(volumen + 1);
 	}
 	public void volumenDown() {
-		if (estado == true) {
-			if (volumen > 0) {
-			volumen -= 1;
-			}
-		}
+		this.setVolumen(volumen - 1);
 	}
 }
