@@ -43,7 +43,7 @@ public class TV {
 			}
 
 	}
-	public Control getCotrol() {
+	public Control getControl() {
 		return this.control;
 	}
 	public void setControl(Control control) {
