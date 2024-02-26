@@ -12,7 +12,7 @@ public class TV {
 	public TV(Marca marca, boolean estado) {
 		this.marca = marca;
 		this.estado = estado;
-		numTv++;
+		TV.numTv++;
 	}
 	public Marca getMarca() {
 		return marca;
@@ -56,7 +56,7 @@ public class TV {
 		return numTv;
 	}
 	public void setNumTV(int num) {
-		numTv = num;
+		TV.numTv = num;
 	}
 	public void turnOn() {
 		this.estado = true;
