@@ -8,10 +8,10 @@ private TV tv;
 		tv.setControl(this);
 	}
 	public TV getTv() {
-		return tv;
+		return this.tv;
 	}
 	public void setTv(TV tv) {
-		this.enlazar(tv);
+		this.tv = tv;
 	}
 	public void turnOn() {
 		this.tv.turnOn();
